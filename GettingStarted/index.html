@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<title>AngularJS: Getting Started</title>
+	</head>
+	<body ng-controller="MainController as main">
+		<h1>{{main.message}}</h1>
+		Length of message: {{main.message.length}}
+		
+		<br/>
+		
+		<div>
+			<div>First Name: {{main.person.firstName}}</div>
+			<div>Last Name: {{main.person.lastName}}</div>
+			<div>
+				<img ng-src="{{main.person.imgSrc}}" title="{{main.person.firstName}} {{main.person.lastName}}" width="100" height="100" />
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="scripts/angular.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
+	</body>
+</html>
